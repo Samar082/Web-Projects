@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <!-- Creating a form where I can get your details directly  in my email  -->
+    <div class="container">
+        <form action="https://formspree.io/f/xgvwvzev" method="post">
+            <h2>Send Your Details</h2>
+            <div class="area">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="area">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="area">
+                <label for="message">Message</label>
+                <textarea type="text" id="message" name="message" required></textarea>
+            </div>
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+
+</html>
