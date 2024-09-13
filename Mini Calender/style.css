@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(120, 120, 235);
+    font-family: cursive;
+}
+
+.container{
+    height: 33vh;
+    width: 16vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+.container .month{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: orangered;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.container .day{
+    color: darkgray;
+}
+
+.container .number{
+    font-size: 40px;
+}
+
+.container .year{
+    color: darkgray;
+    padding-bottom: 10px;
+}
