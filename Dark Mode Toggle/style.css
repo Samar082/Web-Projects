@@ -1,0 +1,49 @@
+  body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    transition: .4s;
+  }
+  .label{
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    background-color: lightgray;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .input:checked + .label .circle{
+    animation: toggleOn .4s linear forwards;
+  }
+  .circle{
+    height: 34px;
+    width: 34px;
+    position: absolute;
+    top: 3px;
+    border-radius: 50%;
+    left: 3px;
+    background-color: white;
+    animation: toggleOff .4s linear forwards;
+  }
+  @keyframes toggleOn{
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+        transform: translateX(40px);
+      
+    }
+  }
+
+  @keyframes toggleOff{
+    0%{
+      transform: translateX(40px);
+    }
+    100%{
+        transform: translateX(0);
+      
+    }
+  }
