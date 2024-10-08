@@ -1,46 +1,49 @@
-// let time = new Date(); // to get the real time
-
-// console.log(time.toTimeString());
-// console.log(time.getHours());
-// console.log(time.getMinutes());
-// console.log(time.getSeconds());
-
 const hoursEl = document.querySelector(".hours");
 const minutesEl = document.querySelector(".minutes");
 const secondsEl = document.querySelector(".seconds");
-const buttonEl = document.querySelector("button");
+const ampmEl = document.querySelector(".ampm");
+
+const alarmEl = document.querySelector("#alarm");
+const clockEl = document.querySelector("#clock");
+const stopwatchEl = document.querySelector("#stopwatch");
+const timerEl = document.querySelector("#timer");
 
 updateClock(); // call the function to update the time
 
-function updateClock(){
+function updateClock() {
     let h = new Date().getHours();
     let m = new Date().getMinutes();
     let s = new Date().getSeconds();
     let ampm = "";
 
-    if(h > 12){
-       ampm = "PM";
-    } else{
+    if (h > 12) {
+        ampm = "PM";
+    } else {
         ampm = "AM";
     }
-
-    s = s < 10 ? "0" + s: s;
-    m = m < 10 ? "0" + m: m;
-    h = h < 10 ? "0" + h: h;
-
-    if (h >= 6 && h <= 18) {
-        body.style.backgroundimage = URL("");
+    
+    if(h >= 6 && h <= 18){
+        ampmEl.style.color = "yellow";
+        ampmEl.style.backgroundColor = "gray";
     }
 
-    hoursEl.innerText = h;
-    minutesEl.innerText = m;
+    s = s < 10 ? "0" + s : s;
+    m = m < 10 ? "0" + m : m;
+    h = h < 10 ? "0" + h : h;
+   
+    hoursEl.innerText = h + " :";
+    minutesEl.innerText = m + " :";
     secondsEl.innerText = s;
-    buttonEl.innerText = ampm;
-    setTimeout(()=>{
+    ampmEl.innerText = ampm;
+    setTimeout(() => {
         updateClock();
     }, 1000);
 }
 
+menuClick();
+function menuClick(){
+
+}
 
 
 

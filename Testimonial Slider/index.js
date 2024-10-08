@@ -6,7 +6,7 @@ const testimonials = [
     },
     {
         name: "Aven Doski",
-        imgUrl: "https://media.istockphoto.com/id/1370558408/photo/portrait-of-attractive-young-school-boy-white-background-stock-photo.jpg?s=1024x1024&w=is&k=20&c=N35jkpBAitzGdcuuEbzT7VrsWkZOzV1iovZxvCl6zUU=",
+        imgUrl: "https://www.istockphoto.com/photo/portrait-of-attractive-young-school-boy-white-background-stock-photo-gm1370558408-440088546",
         text: "Apple makes me more productive and gets the job done in a fraction of the time. I'm glad I found Apple."
     },
     {

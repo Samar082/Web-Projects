@@ -2,21 +2,51 @@ body{
     background-color: rgb(29, 28, 28);
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-    flex-direction: column;
 }
 
 .container{
     display: flex;
-    gap: 10px;
-    font-size: 25px;
+    justify-content: space-around;
+    margin-left: 200px;
+    margin-top: 200px;
 }
 
-.container button{
-    background-color: gray;
-    color: rgb(244, 229, 13);
-    font-weight: 600;
+.clock{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
+
+.time{
+    display: flex;
+    gap: 12px;
+    font-size: 30px;
+}
+
+.ampm{
+    height: 33px;
+    width: 48px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(235, 44, 44);
+}
+.menu{
+   display: flex;
+   flex: 2;
+   gap: 30px;
+   font-size: 25px;
+   margin-top: 20px;
+}
+
+.menu a{
+    color: rgb(208, 88, 88);
+    
+}
+
+/* #alarm{
+    color: rgb(229, 72, 72);
+    border-bottom: 2px solid red;
+    width: auto;
+    display: inline-flex;
+    padding-bottom: 5px;
+} */
